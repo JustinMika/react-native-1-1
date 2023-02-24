@@ -1,36 +1,3 @@
-import {StatusBar} from "expo-status-bar";
-import {
-    StyleSheet,
-    Text,
-    View,
-    Image,
-    TextInput,
-    Button, Alert
-} from "react-native";
-import Form from './components/form';
-
-export default function App() {
-    return (
-        <View style={
-            styles.container
-        }>
-            <Image source={
-                    require("./assets/uago.jpeg")
-                }
-                style={
-                    styles.images
-                }/>
-            <Text style={
-                styles.textS
-            }>
-                Uago & Istago
-            </Text>
-            <Form/>
-            <StatusBar style="auto"/>
-        </View>
-    );
-}
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
